@@ -1,0 +1,250 @@
+.article-detail {
+    max-width: 900px;
+    margin: 0 auto;
+  }
+  
+  .article-detail-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2rem;
+  }
+  
+  .back-btn {
+    background: white;
+    border: 2px solid #e8ecef;
+    padding: 0.75rem 1.5rem;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: 500;
+    color: #333;
+    transition: all 0.3s;
+  }
+  
+  .back-btn:hover {
+    background: #f5f7fa;
+    border-color: #667eea;
+    color: #667eea;
+  }
+  
+  .article-content {
+    background: white;
+    border-radius: 12px;
+    padding: 3rem;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .article-header {
+    margin-bottom: 2.5rem;
+    padding-bottom: 2rem;
+    border-bottom: 2px solid #e8ecef;
+  }
+  
+  .article-header h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #333;
+    line-height: 1.2;
+    margin-bottom: 1.5rem;
+  }
+  
+  .article-meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    font-size: 0.95rem;
+  }
+  
+  .meta-item {
+    color: #666;
+  }
+  
+  .meta-item strong {
+    color: #333;
+    margin-right: 0.5rem;
+  }
+  
+  .meta-item.link {
+    color: #667eea;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s;
+  }
+  
+  .meta-item.link:hover {
+    color: #764ba2;
+  }
+  
+  .article-body {
+    line-height: 1.8;
+    color: #444;
+  }
+  
+  .markdown-content {
+    font-size: 1.1rem;
+  }
+  
+  .markdown-content h1,
+  .markdown-content h2,
+  .markdown-content h3,
+  .markdown-content h4 {
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    color: #333;
+    font-weight: 700;
+  }
+  
+  .markdown-content h2 {
+    font-size: 2rem;
+    border-bottom: 2px solid #e8ecef;
+    padding-bottom: 0.5rem;
+  }
+  
+  .markdown-content h3 {
+    font-size: 1.5rem;
+  }
+  
+  .markdown-content p {
+    margin-bottom: 1.5rem;
+  }
+  
+  .markdown-content ul,
+  .markdown-content ol {
+    margin-bottom: 1.5rem;
+    padding-left: 2rem;
+  }
+  
+  .markdown-content li {
+    margin-bottom: 0.5rem;
+  }
+  
+  .markdown-content a {
+    color: #667eea;
+    text-decoration: none;
+    border-bottom: 1px solid #667eea;
+    transition: color 0.3s;
+  }
+  
+  .markdown-content a:hover {
+    color: #764ba2;
+    border-bottom-color: #764ba2;
+  }
+  
+  .markdown-content code {
+    background: #f5f7fa;
+    padding: 0.2rem 0.5rem;
+    border-radius: 4px;
+    font-size: 0.9em;
+    font-family: 'Courier New', monospace;
+  }
+  
+  .markdown-content pre {
+    background: #f5f7fa;
+    padding: 1.5rem;
+    border-radius: 8px;
+    overflow-x: auto;
+    margin-bottom: 1.5rem;
+  }
+  
+  .markdown-content pre code {
+    background: none;
+    padding: 0;
+  }
+  
+  .markdown-content blockquote {
+    border-left: 4px solid #667eea;
+    padding-left: 1.5rem;
+    margin: 1.5rem 0;
+    color: #666;
+    font-style: italic;
+  }
+  
+  .no-content {
+    text-align: center;
+    padding: 3rem;
+    color: #999;
+    font-style: italic;
+  }
+  
+  .related-articles {
+    margin-top: 3rem;
+    padding-top: 3rem;
+    border-top: 2px solid #e8ecef;
+  }
+  
+  .related-articles h2 {
+    font-size: 1.8rem;
+    margin-bottom: 1.5rem;
+    color: #333;
+  }
+  
+  .related-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 1.5rem;
+  }
+  
+  .related-card {
+    background: white;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-decoration: none;
+    color: inherit;
+    transition: all 0.3s;
+    display: block;
+  }
+  
+  .related-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+  }
+  
+  .related-header {
+    margin-bottom: 1rem;
+  }
+  
+  .related-card h3 {
+    font-size: 1.2rem;
+    margin-bottom: 0.75rem;
+    color: #333;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+  
+  .related-card p {
+    color: #666;
+    font-size: 0.9rem;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+  
+  @media (max-width: 768px) {
+    .article-content {
+      padding: 1.5rem;
+    }
+  
+    .article-header h1 {
+      font-size: 1.8rem;
+    }
+  
+    .article-meta {
+      flex-direction: column;
+      gap: 0.75rem;
+    }
+  
+    .markdown-content {
+      font-size: 1rem;
+    }
+  
+    .related-list {
+      grid-template-columns: 1fr;
+    }
+  }
+  
+  
